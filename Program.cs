@@ -18,13 +18,16 @@
                         InserirConta();
                         break;
                     case "3":
-                        //Transferir();
+                        Transferir();
                         break;
                     case "4":
-                        //Sacar();
+                        Sacar();
                         break;
                     case "5":
-                        //Depositar();
+                        Depositar();
+                        break;
+                    case "6":
+                        Apagar();
                         break;
                     case "C":
                         Console.Clear();
@@ -82,6 +85,59 @@
             listContas.Add(novaConta);
         }
 
+        private static void Transferir()
+        {
+            Console.Write("Digite o número da conta de origem: ");
+            int indiceContaOrigem = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Digite o número da conta de destino: ");
+            int indiceContaDestino = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Digite o valor a ser transferido: ");
+            double valorTransferencia = double.Parse(Console.ReadLine()!);
+
+            listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
+        }
+
+        private static void Sacar()
+        {
+            Console.Write("Digite o número da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Digite o valor a ser sacado: ");
+            double valorSaque = double.Parse(Console.ReadLine()!);
+
+            listContas[indiceConta].Sacar(valorSaque);
+        }
+
+        private static void Depositar()
+        {
+            Console.Write("Digite o número da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine()!);
+
+            Console.Write("Digite o valor a ser depositado: ");
+            double valorDeposito = double.Parse(Console.ReadLine()!);
+
+            listContas[indiceConta].Depositar(valorDeposito);
+        }
+
+        private static void Apagar()
+        {
+            Console.Write("Digite o número da conta a ser apagada: ");
+            int indiceConta = int.Parse(Console.ReadLine()!);
+
+            Console.WriteLine("Atenção, essa ação não poderá ser desfeita!");
+            Console.WriteLine("Todos os dados serão perdidos e NÃO será mais possível realizar operações nesta conta");
+            Console.Write("Deseja realmente continuar? (s/n): ");
+            char resultado = char.Parse(Console.ReadLine()!);
+
+            if (resultado == 's' || resultado == 'S'){
+                listContas.Remove(listContas[indiceConta]);
+            }
+
+            ObterOpcaoUsuario();
+        }
+
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
@@ -93,6 +149,8 @@
             Console.WriteLine("3- Transferir");
             Console.WriteLine("4- Sacar");
             Console.WriteLine("5- Depositar");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("6- Apagar conta");
             Console.WriteLine("C- Limpar Tela");
             Console.WriteLine("X- Sair");
 
