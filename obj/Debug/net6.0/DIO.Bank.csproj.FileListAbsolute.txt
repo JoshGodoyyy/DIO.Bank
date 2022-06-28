@@ -1,0 +1,15 @@
+E:\ws-vs2022\DIO\DIO.Bank\bin\Debug\net6.0\DIO.Bank.exe
+E:\ws-vs2022\DIO\DIO.Bank\bin\Debug\net6.0\DIO.Bank.deps.json
+E:\ws-vs2022\DIO\DIO.Bank\bin\Debug\net6.0\DIO.Bank.runtimeconfig.json
+E:\ws-vs2022\DIO\DIO.Bank\bin\Debug\net6.0\DIO.Bank.dll
+E:\ws-vs2022\DIO\DIO.Bank\bin\Debug\net6.0\DIO.Bank.pdb
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.csproj.AssemblyReference.cache
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.GeneratedMSBuildEditorConfig.editorconfig
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.AssemblyInfoInputs.cache
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.AssemblyInfo.cs
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.csproj.CoreCompileInputs.cache
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.dll
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\refint\DIO.Bank.dll
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.pdb
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\DIO.Bank.genruntimeconfig.cache
+E:\ws-vs2022\DIO\DIO.Bank\obj\Debug\net6.0\ref\DIO.Bank.dll
